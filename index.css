@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P');
+@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
+
+/* https://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: 'Inter', sans-serif;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body, html {
+	background-color: #6aff88;
+  height:100%;
+	font-family: 'Jost', sans-serif;
+	scroll-behavior: smooth;
+}
+
+h1 {
+	font-family: 'Press Start 2P', sans-serif;
+	font-weight: 800;
+	font-size: 5vw;
+	line-height: 1.50;
+}
+
+h2 {
+	font-family: 'Jost', sans-serif;
+	font-weight: 600;
+	font-size: 2.5vw;
+	line-height: 1.05;
+}
+
+.section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+}
+
+#section1 {
+  background-color: #6aff88;
+}
+
+#section2 {
+  background-color: #52e761;
+}
+
+#section3 {
+  background-color: #b9fffa;
+}
+
+#section4 {
+  background-color: #7fe28e;
+}
+
+.content1 {
+  margin: auto;
+  width: 50%;
+  text-align: center;
+}
+
+#text-container {
+font-family: 'Jost', sans-serif;
+font-weight: 800;
+font-size: 3.5vw;
+line-height: 1.50;
+}
+
+#text-container:hover {
+  color: rgb(255, 255, 255); /* Changes text color when hovered */
+  cursor: pointer;
+}
+  
+.scrollButton {
+  font-family: 'Jost', sans-serif;
+	font-weight: 400;
+	font-size: 2vw;
+	line-height: 1.05;
+}
+
+
+/* For the number increment animation */
+.number-container {
+  display: none; /* This hides the number initially */
+  font-size: 72px;
+  font-weight: bold;
+  color: #3498db;
+}
+  
+.start-button {
+  display: inline-block;
+  padding: 30px 45px;
+  font-size: 2.5vw;
+  background-color: #4CAF50;
+  color: white;
+  border: 2px solid #00ff2a;
+  border-radius: 5px;
+  text-align: center;
+  font-family: 'Press Start 2P';
+  transition: all 0.3s ease;
+}
+
+.start-button:hover {
+  background-color: #16562d;
+  border-color: #4CAF50;
+  cursor: pointer;
+}
+
+.gallery {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gallery-image {
+  width: 100vw;
+  height: 100%;
+  object-fit: cover;
+}
+
+.nav-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 10px 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: 'Jost', sans-serif;
+}
+
+#prevButton {
+  left: 10px;
+}
+
+#nextButton {
+  right: 10px;
+}

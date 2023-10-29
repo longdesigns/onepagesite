@@ -1,0 +1,47 @@
+<!-- Information sourced from https://igea.net/2021/10/digital-australia-2022-da22-connected-by-games/ -->
+<!-- Images sourced from Unsplash -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>The Australian Gaming Industry</title>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="section" id="section1">
+            <div class="content1">
+                <h1>Gaming in Australia</h1>
+                    <br>
+                <a href="#section2" id="scrollButton">See the facts</a>
+            </div>
+        </div>
+        <div class="section" id="section2">
+            <div class="content2">
+                <div id="text-container">Australians say
+                    <script src="phrases.js"></script>
+                </div>
+            </div>
+        </div>
+        <div class="section" id="section3">
+            <div class="content3">
+                <div class="number-container">
+                    <span id="number">0</span>
+                    <span id="number">Million Aussies play video games</span>
+                </div>
+                <button id="start-button" class="start-button">Insert Coin</button>
+                <script src="count.js"></script>
+            </div>
+        </div>
+        <div class="section" id="section4">
+            <div class="content4">
+                <div class="gallery">
+                    <button id="prevButton" class="nav-button" onclick="showImage(-1)">Back</button>
+                    <img id="galleryImage" class="gallery-image" src="image1.jpg" alt="Image 1">
+                    <button id="nextButton" class="nav-button" onclick="showImage(1)">Next</button>
+                </div>
+                <script src="lightbox.js"></script>
+            </div>
+        </div>
+        <script src="sections.js"></script>
+    </body>
+</html>
